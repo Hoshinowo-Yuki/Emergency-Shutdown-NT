@@ -1,7 +1,7 @@
 """
 MIT License
 
-Copyright (c) 2025 Yuzuk1Shimotsuki
+Copyright (c) 2025 shirakamiNeko
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -74,11 +74,11 @@ class ShutdownAction(Enum):
     ShutdownNoReboot = 0
     """
     Halts the system without rebooting or powering off.
-    - The OS kernel stops execution
-    - All drivers and services shut down
-    - No further action is taken
-    - The screen may freeze or go black
-    - You must manually reset or power off the machine afterwards
+    
+    The OS kernel stops execution, then all drivers and services shut down.
+    
+    No further action is taken. The screen may freeze or go black and you must manually reset or power off the machine afterwards.
+    
 
     Similar as the action after "It is now safe to turn off your computer." in older Windows or DOS versions (Windows 95, 98...)
 
@@ -89,21 +89,22 @@ class ShutdownAction(Enum):
     ShutdownReboot = 1
     """
     Shuts down the system and then automatically reboots.
-    - The OS kernel stops execution
-    - Drivers and services shut down cleanly
-    - Machine restarts after shutdown
+    
+    The OS kernel stops execution, then all drivers and services shut down cleanly. Machine restarts after shutdown.
+
 
     Same as the hidden "Emergency Restart" on Windows 10 or 11, which is not waiting for any software shutdown.
+
     """
 
     ShutdownPowerOff = 2
     """
     Completely halts and powers off the system.
-    - The OS kernel stops execution
-    - All drivers and services shut down
-    - System is then powered off
+
+    The OS kernel stops execution, all drivers and services shut down. System is then powered off.
+
     
-    The most commonly used option for emergency shutdowns
+    This is the most commonly used option for emergency shutdowns
     """
 
 # Constants for privilege adjustment
@@ -226,4 +227,5 @@ if __name__ == "__main__":
 
     # Shut down the system with the selected action
     emergency_shutdown(action)
+
 
