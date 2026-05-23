@@ -1,24 +1,25 @@
 # Emergency-Shutdown-NT
 
-A Python utility to shutdown or restart Windows instantly
+A Python utility to shutdown or restart Windows NT based system instantly
 
 > [!WARNING]
 > This script will attempt to shut down your system by triggering `NtShutdownSystem()` directly. It is intended for emergency situations only, and generally, requires Administrators Privilege to execute. Do not run it unless you are prepared for an immediate hard shutdown.
 >
 > **HARDWARE DAMAGE** or **DATA LOSS** may occur if this action was **not done in a proper way**. I am **not responsible** for any **unwanted behavior** of this program.
 >
-> In case your computer **doesn't start up again afterwards**, it is **not my fault**. You are using this script **at your own risk**.
-> Proceed with caution and make sure you have **saved all work** before running it!!!
+> In case your computer **does not start up again afterwards**, it is **not my fault**. You are using this script **at your own risk**.
+> 
+> Proceed with caution and make sure you have **saved all work** before running it!!!!!
 
 ## Introduction
 
-This is a Python reimplementation of the Emergency Shutdown script that uses the Windows API `NtShutdownSystem()` to trigger a system shutdown. It provides in a cleaner form and becomes more beginner-friendly.
+This is a **Python reimplementation** of the Emergency Shutdown script that uses the Windows API `NtShutdownSystem()` to trigger a system shutdown. Provides in a cleaner form and becomes more beginner-friendly.
 
 One of the perfect example of Python to interact with low-level system APIs, similar to C or C++, without any noticeable perforamance degradation while having a much simpler syntax.
 
 
 > [!NOTE]
-> The souce code is based on the original C++ code from an old article. You can head over to the [Reference](https://github.com/Yuzuk1Shimotsuki/Emergency-Shutdown-NT?tab=readme-ov-file#reference) section for more details.
+> The souce code is based on the original C++ code from an old article. You can head over to the [Reference](https://github.com/Hoshinowo-Yuki/Emergency-Shutdown-NT?tab=readme-ov-file#reference) section for more details.
 
 ## Background
 
@@ -53,7 +54,7 @@ In the end, I decided to rewrite the entire script from C++ into Python. And tha
 There are 3 ways to use the code:
 
 1. Using the `.exe` file
-   - Head over to [Release](https://github.com/Yuzuk1Shimotsuki/Emergency-Shutdown-NT/releases) section and download the lastest pre-compiled `.exe` file. Run it as an administrator.
+   - Head over to [Release](https://github.com/Hoshinowo-Yuki/Emergency-Shutdown-NT/releases) section and download the lastest pre-compiled `.exe` file. Run it as an administrator.
      ```bash
      YOUR_DOWNLOAD_LOCATION\EmergencyShutdown.exe --YOUR_OPTION
      ```
@@ -61,7 +62,7 @@ There are 3 ways to use the code:
 2. Execute the source code
    - Download / Clone the repo and execute the `.py` source code in your Terminal. Run the Terminal as an administrator.
      ```bash
-     git clone https://github.com/Yuzuk1Shimotsuki/Emergency-Shutdown-NT.git YOUR_LOCATION
+     git clone https://github.com/Hoshinowo-Yuki/Emergency-Shutdown-NT.git YOUR_LOCATION
      ```
      
      ```bash
@@ -93,8 +94,21 @@ There are 3 ways to use the code:
    ```
 
 ## Reference
-
-hxhl95 (Mar 17, 2009), Performing emergency shutdowns. Retrieved from https://www.codeproject.com/Articles/34194/Performing-emergency-shutdowns
+> [!NOTE]
+> Since the article was somehow being **removed** by January 2026, the original link is now no longer vaild.
+> 
+> Thus, an **archived version** of the article retrieved from Wayback Machine as of December 2024 with all valid file download links is provided below:
+> 
+> https://web.archive.org/web/20241213000008/https://www.codeproject.com/Articles/34194/Performing-emergency-shutdowns
+>
+> To protect the author's identity, the link of **original article** is provided below:
+>
+> https://www.codeproject.com/Articles/34194/Performing-emergency-shutdowns
+>
+> You can also use the following text for citation purpose:
+>
+> hxhl95 (2009) Performing emergency shutdowns, *CodeProject*. Archived at https://web.archive.org/web/20241213000008/https://www.codeproject.com/Articles/34194/Performing-emergency-shutdowns
+> 
 
 ## License
 
