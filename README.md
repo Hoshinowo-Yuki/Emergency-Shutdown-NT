@@ -101,11 +101,11 @@ There are 3 ways to use the code:
 > 
 > https://web.archive.org/web/20241213000008/https://www.codeproject.com/Articles/34194/Performing-emergency-shutdowns
 >
-> To protect the author's identity, the link of **original article** is provided below:
+> To protect the author\'s identity, the link of **original article** is provided below:
 >
 > https://www.codeproject.com/Articles/34194/Performing-emergency-shutdowns
 >
-> You can also use the following text for citation purpose:
+> You can also use the following text for **citation purpose**:
 >
 > hxhl95 (2009) Performing emergency shutdowns, *CodeProject*. Archived at https://web.archive.org/web/20241213000008/https://www.codeproject.com/Articles/34194/Performing-emergency-shutdowns
 > 
