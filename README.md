@@ -13,7 +13,7 @@ A Python utility to shutdown or restart Windows NT based system instantly
 
 ## Introduction
 
-This is a **Python reimplementation** of the Emergency Shutdown script that uses the Windows API `NtShutdownSystem()` to trigger a system shutdown. Provides in a cleaner form and becomes more beginner-friendly.
+This is a **Python re-implementation** of the Emergency Shutdown script that uses the Windows API `NtShutdownSystem()` to trigger a system shutdown. Provides in a cleaner form and becomes more beginner-friendly.
 
 One of the perfect example of Python to interact with low-level system APIs, similar to C or C++, without any noticeable perforamance degradation while having a much simpler syntax.
 
@@ -76,13 +76,13 @@ There are 3 ways to use the code:
    ```python
    import EmergencyShutdown
 
-   # You can then call it like this. e.g. For ShutdownNoReboot
+   # You can then call it like this. e.g. For ShutdownNoReboot (WARNING: Untested in modern OS)
    EmergencyShutdown.emergency_shutdown(EmergencyShutdown.ShutdownAction.ShutdownNoReboot)
 
-   # For ShutdownReboot
+   # For ShutdownReboot (i.e. Emergency reboot in Windows 10/11)
    EmergencyShutdown.emergency_shutdown(EmergencyShutdown.ShutdownAction.ShutdownReboot)
 
-   # For ShutdownPowerOff
+   # For ShutdownPowerOff (i.e. Instant system halt)
    EmergencyShutdown.emergency_shutdown(EmergencyShutdown.ShutdownAction.ShutdownPowerOff)
    ```
    
