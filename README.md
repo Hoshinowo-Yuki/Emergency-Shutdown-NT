@@ -76,13 +76,16 @@ There are 3 ways to use the code:
    ```python
    import EmergencyShutdown
 
-   # You can then call it like this. e.g. For ShutdownNoReboot (WARNING: Untested in modern OS)
+   # You can then call it like this. e.g. For ShutdownNoReboot
+   # (WARNING: Untested in modern OS)
    EmergencyShutdown.emergency_shutdown(EmergencyShutdown.ShutdownAction.ShutdownNoReboot)
 
-   # For ShutdownReboot (i.e. Emergency reboot in Windows 10/11)
+   # For ShutdownReboot
+   # (i.e. Emergency Restart in Windows 10/11)
    EmergencyShutdown.emergency_shutdown(EmergencyShutdown.ShutdownAction.ShutdownReboot)
 
-   # For ShutdownPowerOff (i.e. Instant system halt)
+   # For ShutdownPowerOff
+   # (i.e. Instant system halt)
    EmergencyShutdown.emergency_shutdown(EmergencyShutdown.ShutdownAction.ShutdownPowerOff)
    ```
    
